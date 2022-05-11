@@ -77,7 +77,6 @@ go func() {
 		mu.Unlock()
 		time.Sleep(100 * time.Millisecond) // 10[ms]スリープ
 	}
-	done <- true
 }()
 
 wg.Add(1)
